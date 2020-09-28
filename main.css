@@ -5,9 +5,12 @@
 }
 body{
     font-family:Arial;
-    max-width:1440px;
+    
 }
-
+.container2{
+      max-width:1440px;
+      margin: auto;
+}
 .navbar{
     padding:50px 30px;
     background-image: url(https://apfac.netlify.app//favicon/header.jpg);
@@ -87,9 +90,6 @@ body{
 
 .dropdown:hover .drop13 ul{
   display:block;
-  
-
-
 }
 .line{
     background-color: #ff0000;
@@ -102,7 +102,6 @@ body{
     align-items: center;
 }
 .main-container{
-    display: flex;
     padding: 50px 0px 20px 100px;
     background-image: url(https://apfac.netlify.app/favicon/home-bg.jpg);
     background-size:cover;
@@ -110,7 +109,9 @@ body{
     background-position-x: 50%;
     background-position-y: 100%;
 
-    
+}
+.containerbox{
+    display: flex;
 }
 .container1 img{
     width: 150px;
@@ -196,6 +197,10 @@ body{
 } 
 
 @media(max-width:1024px){
+    .container2{
+        max-width: 1024px;
+    }
+    
     .navbarlist ul{
         flex-wrap: wrap;
         justify-content:center;
@@ -204,7 +209,7 @@ body{
 }
 
 @media(max-width:768px){
-    body{
+    .container2{
         max-width:768px;
     
     }
@@ -253,9 +258,8 @@ body{
 }
 
 @media(max-width:640px){
-    body{
+    .container2{
         max-width: 640px;
-        margin:auto;
     }
     .navbarlist ul{
         display: none;
